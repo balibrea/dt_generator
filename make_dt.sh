@@ -48,12 +48,12 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Default Vivado and Vitis paths
 VIVADO_VERSION="2022.2"
-VIVADO_PATH=/media/balibrea/WH/Development/FPGA/VITIS/Vivado/$VIVADO_VERSION
-VITIS_PATH=/media/balibrea/WH/Development/FPGA/VITIS/Vitis/$VIVADO_VERSION
+VIVADO_PATH=install_path/Vivado/$VIVADO_VERSION
+VITIS_PATH=install_path/Vitis/$VIVADO_VERSION
 
 # Default source paths
-LINUX_SRC=/media/balibrea/WH/Development/FPGA/Projects/MinizedLinux/linux-xlnx
-UBOOT_SRC=/media/balibrea/WH/Development/FPGA/Projects/MinizedLinux/u-boot-xlnx
+LINUX_SRC=kernel_path/linux-xlnx
+UBOOT_SRC=u-boot_path/u-boot-xlnx
 
 # Set environment paths
 export PATH=$VIVADO_PATH/bin:$PATH
